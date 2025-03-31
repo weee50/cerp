@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CERP Round 1</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="mersenne_twister.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="voting_gen.js"></script>
+    <script>
+      $( function() {
+        $( ".responses" ).sortable();
+      } );
+    </script>
+  </head>
+  <body>
+    <div class="twow_rectangle">
+      <h1>The CaryEWOW Revoting Project - Round 1</h1>
+      <h2>Prompt: What did Ten say when he was upgraded to Eleven?</h2>
+      
+      <p>I would like to vote on screens of <input id="screen_size" type="number" value="11" min="11" max="16607"></input></p>
+      <p>3-letter section code (leave blank for a random section): <input id="seed" type="text" maxlength="3"></input></p>
+      <p><button onclick="generateSection()">Generate Section</button></p>
+      
+      <div id="voting"></div>
+    </div>
+  </body>
+</html>

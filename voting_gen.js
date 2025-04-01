@@ -108,6 +108,7 @@ function generateSection() {
     if (big_screens) {
         voting_html.push(`<div class="voting_info">Due to large screen sizes, dragging has been disabled. Copying screens is recommended.</div>`)
         voting_html.push(`<p><button class="copy_all_button" onclick="copyAllScreens()">Copy All Screens</button></p>`)
+        voting_html.push(`<p><input type="checkbox" id="quote_fix" checked>Fix quotation marks in copied screens (for Google Sheets)</input></p>`)
     } else {
         voting_html.push(`<div class="voting_info">Drag responses to move them, then use the "Collapse Vote" button to obtain your vote! Use the "Copy Screen" button to copy the entire screen for use in external tools.</div>`)
         voting_html.push(`<p><button class="copy_all_button" onclick="copyAllScreens()">Copy All Screens</button><button class="copy_all_button" onclick="copyCollapsedVotes()">Copy All Collapsed Votes</button></p>`)
